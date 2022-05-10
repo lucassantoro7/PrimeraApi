@@ -3,7 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeraApi", "PrimeraApi\PrimeraApi.csproj", "{98B9B3DE-B5D4-4280-963D-A1B95310322E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeraApi", "PrimeraApi\PrimeraApi.csproj", "{98B9B3DE-B5D4-4280-963D-A1B95310322E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CAE9F38-2A18-48B5-99B4-F706EE188909} = {5CAE9F38-2A18-48B5-99B4-F706EE188909}
+		{48AB5A5C-FA47-448A-BA27-2BA285AC411A} = {48AB5A5C-FA47-448A-BA27-2BA285AC411A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeraApi.Business", "PrimeraApi.Business\PrimeraApi.Business.csproj", "{5CAE9F38-2A18-48B5-99B4-F706EE188909}"
+	ProjectSection(ProjectDependencies) = postProject
+		{464D5244-02C4-4ECC-97A5-33DD3AED20E2} = {464D5244-02C4-4ECC-97A5-33DD3AED20E2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeraApi.DataAccess", "PrimeraApi.DataAccess\PrimeraApi.DataAccess.csproj", "{464D5244-02C4-4ECC-97A5-33DD3AED20E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeraApi.Common", "PrimeraApi.Common\PrimeraApi.Common.csproj", "{48AB5A5C-FA47-448A-BA27-2BA285AC411A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +28,18 @@ Global
 		{98B9B3DE-B5D4-4280-963D-A1B95310322E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98B9B3DE-B5D4-4280-963D-A1B95310322E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98B9B3DE-B5D4-4280-963D-A1B95310322E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAE9F38-2A18-48B5-99B4-F706EE188909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAE9F38-2A18-48B5-99B4-F706EE188909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAE9F38-2A18-48B5-99B4-F706EE188909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAE9F38-2A18-48B5-99B4-F706EE188909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464D5244-02C4-4ECC-97A5-33DD3AED20E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464D5244-02C4-4ECC-97A5-33DD3AED20E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464D5244-02C4-4ECC-97A5-33DD3AED20E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464D5244-02C4-4ECC-97A5-33DD3AED20E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48AB5A5C-FA47-448A-BA27-2BA285AC411A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48AB5A5C-FA47-448A-BA27-2BA285AC411A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48AB5A5C-FA47-448A-BA27-2BA285AC411A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48AB5A5C-FA47-448A-BA27-2BA285AC411A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
